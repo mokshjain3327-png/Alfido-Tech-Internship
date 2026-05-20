@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BrainBurst | Quiz App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ── START SCREEN ── -->
+  <div class="screen active" id="startScreen">
+    <div class="card start-card">
+      <div class="logo">🧠</div>
+      <h1 class="brand">BrainBurst</h1>
+      <p class="tagline">10 questions · 15 seconds each<br>Test your IT knowledge!</p>
+      <div class="badges">
+        <span class="badge">📝 10 Questions</span>
+        <span class="badge">⏱ 15s Each</span>
+        <span class="badge">🏆 Scored</span>
+      </div>
+      <button class="btn-primary" id="startBtn">Start Quiz →</button>
+    </div>
+  </div>
+
+  <!-- ── QUIZ SCREEN ── -->
+  <div class="screen" id="quizScreen">
+    <div class="card quiz-card">
+
+      <div class="topbar">
+        <div class="q-label">Question <span id="qNum">1</span><span class="q-of">/10</span></div>
+        <div class="timer-box">
+          <svg class="t-ring" viewBox="0 0 48 48">
+            <circle class="t-bg" cx="24" cy="24" r="20"/>
+            <circle class="t-arc" id="timerArc" cx="24" cy="24" r="20"/>
+          </svg>
+          <span class="t-num" id="timerNum">15</span>
+        </div>
+        <div class="score-pill">⭐ <span id="liveScore">0</span></div>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill" style="width:0%"></div>
+      </div>
+
+      <div class="question-wrap">
+        <span class="q-cat" id="qCat">Category</span>
+        <p class="q-text" id="qText">Loading question...</p>
+      </div>
+
+      <div class="options" id="optionsGrid"></div>
+
+      <div class="feedback-box" id="feedbackBox" style="display:none">
+        <span id="feedbackMsg">Feedback here</span>
+      </div>
+
+      <button class="btn-primary" id="nextBtn" style="display:none">
+        Next →
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ── RESULT SCREEN ── -->
+  <div class="screen" id="resultScreen">
+    <div class="card result-card">
+      <div class="r-emoji" id="rEmoji">🏆</div>
+      <h2 class="r-title" id="rTitle">Excellent!</h2>
+      <div class="r-score"><span id="finalScore">0</span><span class="r-of">/10</span></div>
+      <p class="r-msg" id="rMsg">Great work!</p>
+      <div class="r-stats">
+        <div class="r-stat">
+          <div class="r-stat-val" id="sCorrect">0</div>
+          <div class="r-stat-lbl">Correct</div>
+        </div>
+        <div class="r-stat">
+          <div class="r-stat-val" id="sWrong">0</div>
+          <div class="r-stat-lbl">Wrong</div>
+        </div>
+        <div class="r-stat">
+          <div class="r-stat-val" id="sPct">0%</div>
+          <div class="r-stat-lbl">Accuracy</div>
+        </div>
+      </div>
+      <button class="btn-primary" id="retryBtn">Play Again →</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
