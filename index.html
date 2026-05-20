@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-left">
+      <div class="logo">NETFLIX</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">New & Popular</a></li>
+        <li><a href="#">My List</a></li>
+        <li><a href="#">Browse by Languages</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <span class="nav-icon">🔍</span>
+      <span class="nav-icon">🔔</span>
+      <div class="avatar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="avatar"/>
+        <span class="caret">▾</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO BANNER -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">N SERIES</div>
+      <h1 class="hero-title">Stranger Things</h1>
+      <p class="hero-desc">
+        When a young boy vanishes, a small town uncovers a mystery involving secret experiments,
+        terrifying supernatural forces, and one strange little girl.
+      </p>
+      <div class="hero-meta">
+        <span class="match">98% Match</span>
+        <span class="year">2016</span>
+        <span class="rating">TV-14</span>
+        <span class="seasons">4 Seasons</span>
+      </div>
+      <div class="hero-buttons">
+        <button class="btn btn-play">▶ Play</button>
+        <button class="btn btn-info">ℹ More Info</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT ROWS -->
+  <main class="content">
+
+    <section class="row">
+      <h2 class="row-title">Trending Now</h2>
+      <div class="cards-wrapper">
+        <button class="arrow arrow-left" data-row="0">&#8249;</button>
+        <div class="cards" id="row-0">
+          <div class="card" style="--bg: url('https://picsum.photos/seed/t1/300/170')"><div class="card-overlay"><span>Squid Game</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/t2/300/170')"><div class="card-overlay"><span>Money Heist</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/t3/300/170')"><div class="card-overlay"><span>Dark</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/t4/300/170')"><div class="card-overlay"><span>Ozark</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/t5/300/170')"><div class="card-overlay"><span>Breaking Bad</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/t6/300/170')"><div class="card-overlay"><span>The Crown</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/t7/300/170')"><div class="card-overlay"><span>Narcos</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/t8/300/170')"><div class="card-overlay"><span>Lupin</span></div></div>
+        </div>
+        <button class="arrow arrow-right" data-row="0">&#8250;</button>
+      </div>
+    </section>
+
+    <section class="row">
+      <h2 class="row-title">Popular on Netflix</h2>
+      <div class="cards-wrapper">
+        <button class="arrow arrow-left" data-row="1">&#8249;</button>
+        <div class="cards" id="row-1">
+          <div class="card" style="--bg: url('https://picsum.photos/seed/p1/300/170')"><div class="card-overlay"><span>The Witcher</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/p2/300/170')"><div class="card-overlay"><span>Bridgerton</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/p3/300/170')"><div class="card-overlay"><span>Emily in Paris</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/p4/300/170')"><div class="card-overlay"><span>Cobra Kai</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/p5/300/170')"><div class="card-overlay"><span>Shadow & Bone</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/p6/300/170')"><div class="card-overlay"><span>Mindhunter</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/p7/300/170')"><div class="card-overlay"><span>Peaky Blinders</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/p8/300/170')"><div class="card-overlay"><span>Black Mirror</span></div></div>
+        </div>
+        <button class="arrow arrow-right" data-row="1">&#8250;</button>
+      </div>
+    </section>
+
+    <section class="row">
+      <h2 class="row-title">Continue Watching</h2>
+      <div class="cards-wrapper">
+        <button class="arrow arrow-left" data-row="2">&#8249;</button>
+        <div class="cards" id="row-2">
+          <div class="card" style="--bg: url('https://picsum.photos/seed/c1/300/170')"><div class="card-overlay"><span>Wednesday</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/c2/300/170')"><div class="card-overlay"><span>The Last Kingdom</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/c3/300/170')"><div class="card-overlay"><span>Altered Carbon</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/c4/300/170')"><div class="card-overlay"><span>Daredevil</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/c5/300/170')"><div class="card-overlay"><span>Locke & Key</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/c6/300/170')"><div class="card-overlay"><span>The Haunting</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/c7/300/170')"><div class="card-overlay"><span>You</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/c8/300/170')"><div class="card-overlay"><span>Manifest</span></div></div>
+        </div>
+        <button class="arrow arrow-right" data-row="2">&#8250;</button>
+      </div>
+    </section>
+
+    <section class="row">
+      <h2 class="row-title">My List</h2>
+      <div class="cards-wrapper">
+        <button class="arrow arrow-left" data-row="3">&#8249;</button>
+        <div class="cards" id="row-3">
+          <div class="card" style="--bg: url('https://picsum.photos/seed/m1/300/170')"><div class="card-overlay"><span>Extraction</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/m2/300/170')"><div class="card-overlay"><span>Bird Box</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/m3/300/170')"><div class="card-overlay"><span>6 Underground</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/m4/300/170')"><div class="card-overlay"><span>The Old Guard</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/m5/300/170')"><div class="card-overlay"><span>Army of the Dead</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/m6/300/170')"><div class="card-overlay"><span>Red Notice</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/m7/300/170')"><div class="card-overlay"><span>Enola Holmes</span></div></div>
+          <div class="card" style="--bg: url('https://picsum.photos/seed/m8/300/170')"><div class="card-overlay"><span>Tick, Tick... Boom!</span></div></div>
+        </div>
+        <button class="arrow arrow-right" data-row="3">&#8250;</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Questions? Call 000-800-919-1694</p>
+    <div class="footer-links">
+      <a href="#">FAQ</a>
+      <a href="#">Help Centre</a>
+      <a href="#">Account</a>
+      <a href="#">Media Centre</a>
+      <a href="#">Investor Relations</a>
+      <a href="#">Jobs</a>
+      <a href="#">Cookie Preferences</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="footer-lang">
+      <select>
+        <option>English</option>
+        <option>हिन्दी</option>
+      </select>
+    </div>
+    <p class="footer-copy">Netflix India</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
