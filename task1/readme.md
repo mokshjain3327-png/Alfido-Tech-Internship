@@ -107,4 +107,5 @@ BSc IT Student — K.C. College, Mumbai
 📍 Location: Virar (West), Mumbai, Maharashtra 401303
 
 
-Built with ❤️ as part of an internship project — 2025
+Built with ❤️ as part of an internship project — 2026-2027
+
